@@ -56,6 +56,12 @@ const linksList = [
     icon: "school",
     to: "/colors",
   },
+  {
+    title: "Breakpoints",
+    caption: "quasar.dev",
+    icon: "school",
+    to: "/breakpoints",
+  },
 ];
 
 const leftDrawerOpen = ref(false);

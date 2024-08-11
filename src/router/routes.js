@@ -7,6 +7,8 @@ const routes = [
       { path: "typography", component: () => import("pages/Typography.vue") },
       { path: "colors", component: () => import("pages/Colors.vue") },
       { path: "breakpoints", component: () => import("pages/BreakPoints.vue") },
+      { path: "flexGrid1", component: () => import("pages/FlexGrid1.vue") },
+      { path: "flexGrid2", component: () => import("pages/FlexGrid2.vue") },
       {
         path: "classesVariables",
         component: () => import("pages/ClassesVariables.vue"),

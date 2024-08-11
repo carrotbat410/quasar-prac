@@ -68,6 +68,18 @@ const linksList = [
     icon: "school",
     to: "/classesVariables",
   },
+  {
+    title: "Flex Grdi 1",
+    caption: "quasar.dev",
+    icon: "school",
+    to: "/flexGrid1",
+  },
+  {
+    title: "Flex Grdi 2",
+    caption: "quasar.dev",
+    icon: "school",
+    to: "/flexGrid2",
+  },
 ];
 
 const leftDrawerOpen = ref(false);

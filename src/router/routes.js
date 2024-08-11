@@ -7,6 +7,10 @@ const routes = [
       { path: "typography", component: () => import("pages/Typography.vue") },
       { path: "colors", component: () => import("pages/Colors.vue") },
       { path: "breakpoints", component: () => import("pages/BreakPoints.vue") },
+      {
+        path: "classesVariables",
+        component: () => import("pages/ClassesVariables.vue"),
+      },
     ],
   },
 

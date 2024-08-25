@@ -9,6 +9,7 @@ const routes = [
       { path: "breakpoints", component: () => import("pages/BreakPoints.vue") },
       { path: "flexGrid1", component: () => import("pages/FlexGrid1.vue") },
       { path: "flexGrid2", component: () => import("pages/FlexGrid2.vue") },
+      { path: "move", component: () => import("pages/Move.vue") },
       {
         path: "classesVariables",
         component: () => import("pages/ClassesVariables.vue"),

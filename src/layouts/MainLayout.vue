@@ -80,6 +80,12 @@ const linksList = [
     icon: "school",
     to: "/flexGrid2",
   },
+  {
+    title: "move",
+    caption: "quasar.dev",
+    icon: "school",
+    to: "/move",
+  },
 ];
 
 const leftDrawerOpen = ref(false);

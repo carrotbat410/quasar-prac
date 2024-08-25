@@ -29,6 +29,10 @@
 </template>
 
 <script setup>
+/**
+ * 현재 문제점: 안움직일떄 눈덩이 던지면 모션이 멈춰있음(데미지는 줌)
+ */
+
 import { ref, computed, onMounted, onBeforeUnmount } from "vue";
 
 // 리스폰 지점 변수
@@ -60,7 +64,7 @@ const targetY = ref(null);
 
 const snowballs = ref([]);
 const snowballCooldown = 1000; // 쿨타임 (밀리초)
-const maxSnowballDistance = 300; // 최대 거리 (픽셀)
+const maxSnowballDistance = 400; // 최대 거리 (픽셀)
 
 const gameContainerStyle = computed(() => ({
   width: `${mapWidth.value}px`,
@@ -199,10 +203,10 @@ const throwSnowball = (angle) => {
   canThrowSnowball.value = false;
 
   const snowballId = Date.now();
-  const snowballSpeed = 200;
+  const snowballSpeed = 150;
   const startX = characterX.value + characterSize.value / 2;
   const startY = characterY.value + characterSize.value / 2;
-  const snowballSize = 10;
+  const snowballSize = 20;
 
   const snowball = {
     id: snowballId,
